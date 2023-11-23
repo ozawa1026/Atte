@@ -16,7 +16,7 @@
     <div class="header__inner">
       <div class="header-utilities">
         <a class="header__logo" href="/">
-         Atte
+        Atte
         </a>
         <nav>
           <ul class="header-nav">

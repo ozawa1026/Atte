@@ -17,7 +17,7 @@ class CreateWorkTable extends Migration
             $table->id();
             $table->timestamp('work_start', $precision = 0);
             $table->timestamp('work_end', $precision = 0);
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('users_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

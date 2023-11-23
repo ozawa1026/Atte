@@ -17,7 +17,7 @@ class CreateBreakTable extends Migration
             $table->id();
             $table->timestamp('break_start', $precision = 0);
             $table->timestamp('break_end', $precision = 0);
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('users_id')->constrained()->cascadeOnDelete();
             $table->foreignId('work_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('views.app')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/login.css') }}">
@@ -9,7 +9,8 @@
   <div class="login-form__heading">
     <h2>ログイン</h2>
   </div>
-  <form class="form">
+  <form class="form" action="/login" method="post">
+    @csrf
     <div class="form__group">
       <div class="form__group-title">
         <span class="form__label--item">メールアドレス</span>
